@@ -1,6 +1,6 @@
 #ifndef DATA_H
 #define DATA_H
-
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -16,3 +16,6 @@ string kuning= "\033[33m";
 const int LOGIN_GAGAL = 0;
 const int LOGIN_ADMIN = 1;
 const int LOGIN_USER  = 2;
+int main(){
+    cout << "Hello" <<endl;
+}
