@@ -408,3 +408,14 @@ void lihatSpell(){
     }
     cout << "+-------------------------+\n" ;
 }
+
+
+void lihatemblem(){
+    cout <<  "+-------------------------+\n";
+    cout <<                  "|         DATA SPELL      |\n";
+    cout <<                  "+-------------------------+\n";
+    for(int i = 0; i < jumlahSpell; i++){
+        cout << spell[i].id << ". " << spell[i].nama << endl;
+    }
+    cout << "+-------------------------+\n" ;
+}
