@@ -2,14 +2,14 @@
 using namespace std;
 
 struct mahasiswa{
-string nama;
-int nim;
-double ipk;
+    string nama;
+    int nim;
+    double ipk;
 };
 struct Node{
-mahasiswa data;
-Node *next;
-Node *prev;
+    mahasiswa data;
+    Node *next;
+    Node *prev;
 };
 int panjangList = 0;
 void pause(){

@@ -1,26 +1,26 @@
 #include <iostream>
 #include <queue>
-#include <__>
+#include <string>
 using namespace std;
 
 int main() {
     // Deklarasi queue untuk menyimpan nama pelanggan (string)
-    queue<__> antrean;
+    queue<string> antrean;
 
     // Menambahkan pelanggan ke dalam antrean
     antrean.push("Andi");
-    antrean.__("Budi");
-    antrean.__("Citra");
+    antrean.push("Budi");
+    antrean.push("Citra");
 
     cout << "Memproses Antrean Kasir:" << endl;
     
     // Looping selama antrean tidak kosong
-    while (!antrean.__()) {
+    while (!antrean.empty()) {
         // Menampilkan elemen antrean paling depan
-        cout << "Melayani: " << antrean.__() << endl;
+        cout << "Melayani: " << antrean.front() << endl;
         
         // Mengeluarkan elemen yang sudah dilayani dari antrean
-        antrean.__();
+        antrean.pop();
     }
 
     return 0;
